@@ -69,14 +69,11 @@ fieldset {
 }
 
 input[type="button"] {
-
     border-radius: 15px;
-
     background-repeat: no-repeat;
     background-position: left;
     background-position-y: 21%;
     background-position-x: 97%;
-
     width: 90%;
     height: 28%;
     text-align: left;
@@ -89,9 +86,8 @@ input[type="button"] {
 }
 
 input:hover {
-    background-color: rgb(237, 139, 218);
-    transform: scale(1.1);
-    border: 0.5% rgb(37, 121, 231);
+    transform: scale(1.0);
+    border: 0.5% rgb(181, 206, 238);
 }
 
 @media (max-width: 500px) and (min-width: 250px) {
@@ -153,9 +149,9 @@ lable {
 }
 
 input:hover {
-    background-color: rgb(55, 134, 237);
+    background-color: rgb(170, 202, 244);
     transform: scale(1.1);
-    border: 0.5% rgb(37, 121, 231);
+    border: 0.5% rgb(214, 226, 243);
 }
 
 @media (min-width:150px) and (max-width: 300px) {
@@ -195,7 +191,6 @@ input:hover {
     #html {
         background-size: 7%;
     }
-
 }
 
 #javascript {
@@ -206,7 +201,6 @@ input:hover {
     #javascript {
         background-size: 7%;
     }
-
 }
 
 #react {
@@ -217,7 +211,6 @@ input:hover {
     #react {
         background-size: 9%;
     }
-
 }
 
 #mongodb {
@@ -228,7 +221,6 @@ input:hover {
     #mongodb {
         background-size: 5%;
     }
-
 }
 
 #docker {
@@ -239,7 +231,6 @@ input:hover {
     #docker {
         background-size: 10%;
     }
-
 }
 
 #git {
@@ -250,7 +241,6 @@ input:hover {
     #git {
         background-size: 10%;
     }
-
 }
 
 #php {
@@ -261,5 +251,4 @@ input:hover {
     #php {
         background-size: 15%;
     }
-
 }

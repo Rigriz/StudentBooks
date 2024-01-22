@@ -12,7 +12,7 @@ fieldset{
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(35, 132, 242);
-    border: 1.5px solid white;
+    border: 1.5px solid rgb(70, 63, 63);
     border-radius: 25px;
     padding: 1.5% 1.5% 2% 2%;
     margin: 3px;  
@@ -48,15 +48,15 @@ lable {
     font-size:min 12em;
 }
 input:hover {
-    background-color: rgb(55, 134, 237);
-    transform: scale(1.1);
-    border: 0.5% rgb(37, 121, 231);
+    background-color: rgb(209, 229, 255);
+    transform: scale(0.10);
+    border: 0.5% rgb(198, 219, 248);
 }
 input[type="button"] {
     background-image: url("n.png");
     border: 1.5px solid white;
     border-radius: 15px;
-    background-color:white;
+    background-color:rgb(251, 251, 251);
     background-repeat: no-repeat;
     background-position: left;
     background-position-y: 21%;
