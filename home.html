@@ -28,6 +28,12 @@ body {
 section{
     background-color:transparent;
 }
+button{
+    border-radius: 12px;
+    border:1px solid black;
+    
+}
+
 </style>
 <script>
        function form(){
@@ -41,6 +47,7 @@ section{
                 <legend>OOPs with Java </legend>
                 <input id="notes" type="button" value="Notes" onclick="notes()"> <br/>
                 <input id="feedback" type="button" value="Feed Back / Report Bugs" onclick="form()"> <br/>
+                <button onclick="form()" aria-placeholder="Feedback/Bug Report"></button>
            <!--banned for currrent reson 
                 <input id="tutorial" type="button" value="Video Tutorial" onclick="vid()"> <br>
                 <input id="qa" type="button" value="Question paper" onclick="qa()">
