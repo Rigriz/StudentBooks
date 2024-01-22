@@ -4,7 +4,7 @@ function vid(){
 location.href=link;
 }
 function forms(){
-  window.location.href="https://docs.google.com/forms/d/e/1FAIpQLSc0qnRfmyLbeSuh4EL45QA4J94RNXuU0R4DP9e7QmAxvw63bQ/viewform?usp=sf_link"
+  window.location.href="https://docs.google.com/forms/d/e/1FAIpQLSc0qnRfmyLbeSuh4EL45QA4J94RNXuU0R4DP9e7QmAxvw63bQ/viewform?usp=sf_link";
  }
 function notes() {
   var link = "./note.html";
