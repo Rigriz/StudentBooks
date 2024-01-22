@@ -4,7 +4,7 @@ function vid(){
 location.href=link;
 }
 function notes() {
-  var link = "../../note.html";
+  var link = "../../StudentBooks/note.html";
   location.href = link;
 }
 function qa(){
