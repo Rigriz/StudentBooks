@@ -2,7 +2,9 @@ body {
     background-color: rgb(35, 34, 34);
     margin: 12px;
 }
-
+i.size {
+    font-size: 100px;
+ }
 lable {
     font: 25px solid;
 }
