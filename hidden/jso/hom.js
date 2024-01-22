@@ -1,11 +1,11 @@
 //Full stackk Development
-function notes() {
-  var link = "../../note.html";
-  location.href = link;
-}
 function vid(){
  var link ="./tutorial.html";
 location.href=link;
+}
+function notes() {
+  var link = "../../note.html";
+  location.href = link;
 }
 function qa(){
  var link ="qa.html";
