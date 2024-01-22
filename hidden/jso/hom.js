@@ -1,6 +1,5 @@
 //Full stackk Development
 function notes() {
-
   var link = "../../note.html";
   location.href = link;
 }
