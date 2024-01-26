@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyFlow&#160;|&#160;Notes</title>
     <link class="i" rel="icon" type="image/x-icon" href="./hidden/css/webo.ico">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.15.1/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js" integrity="sha512-Z8CqofpIcnJN80feS2uccz+pXWgZzeKxDsDNMD/dJ6997/LSRY+W4NmEt9acwR+Gt9OHN0kkI1CTianCwoqcjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 </head>
 <script>
@@ -78,14 +79,7 @@ loadingTask.promise.then(pdf => {
   canvas.width = viewport.width;
   page.render({ canvasContext: context, viewport: viewport });
 });
-// Disable text selection and context menu
-canvas.addEventListener("contextmenu", (e) => {
-  e.preventDefault();
-});
-canvas.onselectstart = () => false;
 
-// Disable download functionality (if any) provided by PDF.js
-/* ... */
 </script>
 <style>
     #pdf-viewer{
