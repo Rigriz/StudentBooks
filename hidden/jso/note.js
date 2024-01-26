@@ -1,20 +1,25 @@
 function w1() {
     var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
+    console.log("initiated")
 }
 function w2() {
     var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
+    console.log("initiated")
 }
 
 function w3() {
     var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
+    console.log("initiated")
 }
 
 function w4() {
     var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
+    console.log("initiated")
 }
 
 function w5() {
     var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
+    console.log("initiated")
 }
 
 function w6() {
