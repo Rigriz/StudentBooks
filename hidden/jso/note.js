@@ -1,66 +1,57 @@
 function w1() {
-    window.location.assign("https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka");
+    var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
 }
 function w2() {
-    window.location.assign(
-        "https://1drv.ms/w/s!AvY3abs-bIvAgSp3SCy73TvmKrE4?e=03FZZa"
-    );
+    var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
 }
+
 function w3() {
-    window.location.assign(
-        "https://1drv.ms/w/s!AvY3abs-bIvAgS13JCWkfHYGZS_P?e=I54yK6"
-    );
+    var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
 }
+
 function w4() {
-    window.location.assign(
-        "https://1drv.ms/w/s!AvY3abs-bIvAgSza7uWQp_rHAiAC?e=fXreOW"
-    );
+    var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
 }
+
 function w5() {
-    window.location.assign(
-        "https://1drv.ms/w/s!AvY3abs-bIvAgS55_QgMFsXcvDg6?e=rga80B"
-    );
+    var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
 }
+
 function w6() {
-    window.location.assign(
-        "https://1drv.ms/w/s!AvY3abs-bIvAgS_sUCb5PZ1GnadP?e=dQHbth"
-    );
+    var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
 }
+
 function w7() {
-    window.location.assign(
-        "https://1drv.ms/w/s!AvY3abs-bIvAgTNIsn3n1zqVZ2Iq?e=v7bGcT"
-    );
+    var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
 }
+
 function w8() {
-    window.location.assign(
-        "https://1drv.ms/w/s!AvY3abs-bIvAgTQn76JQCwELrd5e?e=pbusvL"
-    );
+    var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
 }
+
 function w9() {
-    window.location.assign(
-        "https://1drv.ms/w/s!AvY3abs-bIvAgTXBeCqcMhIYNYdD?e=miFqAC"
-    );
+    var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
+
 }
 function w10() {
-    alert("Due to some issue we are unable to provide week 10 Notes");
+    var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
+
 }
 function w11() {
-    window.location.assign(
-        "https://1drv.ms/w/s!AvY3abs-bIvAgTaDO3Q_btcjktgb?e=aUpuli"
-    );
+    var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
+
 }
 function w12() {
-    window.location.assign(
-        "https://1drv.ms/w/s!AvY3abs-bIvAgTep_PmsgRRoCfii?e=FTwhqd"
-    );
+    var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
+
 }
 function w13() {
-    alert("Due to some issue we are unable to provide week 13 Notes");
+    var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
+
 }
 function model(){
-    window.location.assign(
-        "https://1drv.ms/w/s!AvY3abs-bIvAgTwxbdoyWqRJvV7e?e=J0Y8kt"
-    );
+    var url="https://1drv.ms/w/s!AvY3abs-bIvAgSlw4D2iuzCoL5Ka";
+
 }
 function exam1(){
    /*  window.location.assign(
