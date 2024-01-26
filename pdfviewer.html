@@ -78,7 +78,14 @@ loadingTask.promise.then(pdf => {
   canvas.width = viewport.width;
   page.render({ canvasContext: context, viewport: viewport });
 });
+// Disable text selection and context menu
+canvas.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+});
+canvas.onselectstart = () => false;
 
+// Disable download functionality (if any) provided by PDF.js
+/* ... */
 </script>
 <style>
     #pdf-viewer{
