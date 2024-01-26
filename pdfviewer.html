@@ -67,7 +67,6 @@
     
     
         // Fetch the PDF file
-const url = "path/to/your/pdf.pdf";
 const loadingTask = pdfjsLib.getDocument(url);
 loadingTask.promise.then(pdf => {
   // Render the first page
