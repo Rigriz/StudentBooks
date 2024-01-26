@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyFlow&#160;|&#160;Notes</title>
     <link class="i" rel="icon" type="image/x-icon" href="./hidden/css/webo.ico">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js" integrity="sha512-Z8CqofpIcnJN80feS2uccz+pXWgZzeKxDsDNMD/dJ6997/LSRY+W4NmEt9acwR+Gt9OHN0kkI1CTianCwoqcjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfkit/0.15.0/pdfkit.min.js"></script>
 
 </head>
 <script>
@@ -66,19 +65,28 @@
         console.log(url);
     
     
-    
-        // Fetch the PDF file
-const loadingTask = pdfjsLib.getDocument(url);
-loadingTask.promise.then(pdf => {
-  // Render the first page
-  const page = pdf.getPage(1);
-  const viewport = page.getViewport({ scale: 1.5 }); // Adjust scale as needed
-  const canvas = document.getElementById("pdf-viewer");
-  const context = canvas.getContext("2d");
-  canvas.height = viewport.height;
-  canvas.width = viewport.width;
-  page.render({ canvasContext: context, viewport: viewport });
-});
+        const doc = new PDFDocument();
+const stream = doc.pipe(blobStream());
+fetch(url)
+  .then(response => response.blob())
+  .then(blob => {
+    doc.fontSize(14); // Adjust font size as needed
+    doc.text("Loading...");
+    stream.on("finish", () => {
+      const blobUrl = URL.createObjectURL(blob);
+      const iframe = document.createElement("iframe");
+      iframe.src = blobUrl;
+      iframe.style.width = "100%";
+      iframe.style.height = "500px"; // Adjust height as needed
+      iframe.style.border = "none";
+      iframe.addEventListener("contextmenu", (e) => e.preventDefault());
+      document.addEventListener("contextmenu", (e) => e.preventDefault());
+      document.getElementById("pdf-viewer").appendChild(iframe);
+    });
+    doc.pipe(blob);
+  })
+  .catch(error => console.error("Error loading PDF:", error));
+
 
 </script>
 <style>
@@ -91,7 +99,6 @@ loadingTask.promise.then(pdf => {
     <h1>Pdf Viewer</h1>
     <div id="pdf-viewer">
     </div>
-    <iframe src="https://drive.google.com/file/d/1PsMvXECSNRTsZJKtrloaoTxIu1PwiTEg/preview" width="640" height="480" allow="autoplay"></iframe>
-</body>
+   </body>
 
 </html>
