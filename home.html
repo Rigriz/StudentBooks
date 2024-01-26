@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html>
+    <style>
+        .i{
+            font-size: 200px;
+        }
+        </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Stack.edu</title>
-    <link rel="icon" type="image/x-icon" href="/hidden/css/zz.ico">
+    <title>StudyFlow&#160;|&#160;Home</title>
+    <link class="i" rel="icon" type="image/x-icon" href="./hidden/css/webo.ico">
     <script src="./hidden/jso/inde.js"> </script>
     <link rel="stylesheet" href="./hidden/home.css">
 </head>
 <style>
 body {
-    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background-image: linear-gradient(-225deg, #87ff6c 0%, hsl(144, 84%, 66%) 100%);
+    background-image: linear-gradient(to top, #ffffff 0%, #ffffff 0%);
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: 'Vibur';
     text-align: center;
 }
+.i{
+    font-size: 100px;
+}
 section{
     background-color:transparent;
 }
+button{
+    border-radius: 12px;
+    border:1px solid black;
+
+}
+
 </style>
+<script>
+       function form(){
+    window.location.href="https://docs.google.com/forms/d/e/1FAIpQLSc0qnRfmyLbeSuh4EL45QA4J94RNXuU0R4DP9e7QmAxvw63bQ/viewform?usp=sf_link"
+   }
+</script>
 <body>
     <div id="pd">
         <section>
             <fieldset>
                 <legend>OOPs with Java </legend>
                 <input id="notes" type="button" value="Notes" onclick="notes()"> <br/>
+                <input id="notes"  type="button" value="Feed Back / Report Bugs" onclick="feedbacks()"> <br/>
+           
            <!--banned for currrent reson 
                 <input id="tutorial" type="button" value="Video Tutorial" onclick="vid()"> <br>
                 <input id="qa" type="button" value="Question paper" onclick="qa()">
@@ -57,5 +78,6 @@ section{
   //  } else {
      // window.location.href = "index.html";
    // }
+
 </script>
 </html>
