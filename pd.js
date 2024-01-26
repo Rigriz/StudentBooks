@@ -4,7 +4,7 @@ var aphint = parseInt(aph);
 console.log("entering obja")
 
     if (aphint = 1) {
-        var url = "https://drive.google.com/file/d/1PsMvXECSNRTsZJKtrloaoTxIu1PwiTEg/view?usp=sharing"
+        var url = "."
         console.log("week1 set");
     }
     if (aphint = 2) {
@@ -20,19 +20,19 @@ console.log("entering obja")
         console.log("week1 set");
     }
     if (aphint = 5) {
-        var url = "https://www.google.com"
+        var url = "./hidden/fd/Week1.pdf"
         console.log("week1 set");
     }
     if (aphint = 6) {
-        var url = "https://www.google.com"
+        var url = "./hidden/fd/Week1.pdf"
         console.log("week1 set");
     }
     if (aphint = 7) {
-        var url = "https://www.google.com"
+        var url = "./hidden/fd/Week1.pdf"
         console.log("week1 set");
     }
     if (aphint = 8) {
-        var url = "https://www.google.com"
+        var url = "./hidden/fd/Week1.pdf"
         console.log("week1 set");
     }
     if (aphint = 9) {
