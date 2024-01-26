@@ -2,6 +2,7 @@
 function data(note){
     localStorage.setItem('data', note);
     console.log("initiated")
+    
 
 }
 function exam1(){}
