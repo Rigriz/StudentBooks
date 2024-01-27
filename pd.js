@@ -4,15 +4,15 @@ var aphint = parseInt(aph);
 console.log("entering obja")
 
     if (aphint = 1) {
-        var url = "."
+        var url = "./hidden/fd/Week1.html"
         console.log("week1 set");
     }
     if (aphint = 2) {
-        var url = "https://www.google.com"
+        var url ="./hidden/fd/Week2.html"
         console.log("week1 set");
     }
     if (aphint = 3) {
-        var url = "https://www.google.com"
+        var url = "./hidden/fd/Week3.html"
         console.log("week1 set");
     }
     if (aphint = 4) {
