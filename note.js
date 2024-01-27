@@ -2,7 +2,7 @@
 function data(note){
     localStorage.setItem('data', note);
     console.log("initiated")
-    let url="./week"+weekNumber+".html";
+    let url="./week"+note+".html";
     console.log(url)
     windows.location.href=url;
 }
