@@ -1,7 +1,7 @@
 var aph = localStorage.getItem('data');
 console.log(aph)
 var aphint = parseInt(aph);
-console.log("entering obja")
+console.log("if loop")
 
     if (aphint = 1) {
         var url = "./hidden/fd/Week1.html"
