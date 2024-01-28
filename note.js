@@ -2,9 +2,9 @@
 function data(note){
     localStorage.setItem('data', note);
     console.log("initiated")
-    var url="./hidden/fd/week"+note+".html";
-    console.log(url)
-    windows.location.href=url;
+    var notes = note;
+    url="./hidden/fd/Week1.html"
+    location.assign("./hidden/fd/Week"+notes+".html")
 }
 function exam1(){}
    /*  window.location.assign(
