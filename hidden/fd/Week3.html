@@ -787,7 +787,8 @@
                                         to illustrate &quot;Method Overloading&quot;</p>
                                     <p class="s4" style="padding-left: 3pt;text-indent: 0pt;text-align: left;">*/</p>
                                     <p class="s3" style="text-indent: 0pt;text-align: left;">public class
-                                        <b>MethodOverloadingTest </b>{</p>
+                                        <b>MethodOverloadingTest </b>{
+                                    </p>
                                     <p class="s3"
                                         style="padding-left: 18pt;padding-right: 189pt;text-indent: -9pt;text-align: left;">
                                         public static int <span style=" color: #E21B22;">average(int n1, int n2)
@@ -906,8 +907,7 @@
                         <p class="s2" style="padding-top: 4pt;padding-left: 16pt;text-indent: 0pt;text-align: left;">
                             Note<span class="p">: C language does not support method overloading. You need to use
                                 different method names for each of the variations. C++, Java, C# support method
-                                overloading.</span></p>
-                    </li>
+                                overloading.</span></p? </li>
                     <li data-list-text="2.11">
                         <h2 style="padding-bottom: 1pt;padding-left: 47pt;text-indent: -31pt;text-align: left;">The
                             Access Control Modifiers: public/private</h2>
@@ -935,12 +935,12 @@
                 </ol>
             </ol>
         </li>
-        <li data-list-text="">
+        <li data-list-text="?">
             <p style="padding-left: 73pt;text-indent: -18pt;text-align: justify;">Try inserting the statement
                 &quot;System.out.println(c1.radius)&quot; in TestCircle and observe the error message (error: radius has
                 private access in Circle).</p>
         </li>
-        <li data-list-text="">
+        <li data-list-text="?">
             <p style="padding-left: 73pt;text-indent: -18pt;text-align: justify;">Try changing radius to public in the
                 Circle class, and re-run the above statement.</p>
         </li>
@@ -975,7 +975,8 @@
                     <i>information hiding</i>. That is, objects communicate with each others using well-defined
                     interfaces (public methods). Objects are not allowed to know the implementation details of others.
                     The implementation details are hidden or encapsulated within the class. Information hiding
-                    facilitates reuse of the class.</p>
+                    facilitates reuse of the class.
+                </p>
                 <p class="s2" style="padding-left: 16pt;text-indent: 0pt;text-align: justify;">Rule of Thumb: <span
                         class="p">Do not make any variables public, unless you have a good reason.</span></p>
             </li>
@@ -987,11 +988,13 @@
                     </i>the value of a private variable say xxx, we provide a <i>get method </i>(or <i>getter </i>or
                     <i>accessor method</i>) called getXxx(). A get method needs not expose the data in raw format. It
                     can process the data and limit the view of the data others will see. The getters shall not modify
-                    the variable.</p>
+                    the variable.
+                </p>
                 <p style="padding-left: 16pt;text-indent: 0pt;text-align: justify;">To allow other classes to <i>modify
                     </i>the value of a private variable say xxx, we provide a <i>set method </i>(or <i>setter </i>or
                     <i>mutator method</i>) called setXxx(). A set method could provide data validation (such as range
-                    checking), or transform the raw data into the internal representation.</p>
+                    checking), or transform the raw data into the internal representation.
+                </p>
                 <p style="padding-left: 16pt;text-indent: 0pt;text-align: justify;">For example, in our Circle class,
                     the variables radius and color are declared private. That is to say, they are only accessible within
                     the Circle class and not visible in any other classes, including the TestCircle class. You cannot
@@ -1110,16 +1113,16 @@
                 <p class="s9" style="padding-left: 16pt;text-indent: 0pt;line-height: 12pt;text-align: left;">More on
                     &quot;this&quot;</p>
                 <ul id="l7">
-                    <li data-list-text="">
+                    <li data-list-text="?">
                         <p style="padding-top: 2pt;padding-left: 73pt;text-indent: -18pt;text-align: left;">
                             this.<i>varName </i>refers to <i>varName </i>of this instance; this.<i>methodName</i>(...)
                             invokes <i>methodName</i>(...) of this instance.</p>
                     </li>
-                    <li data-list-text="">
+                    <li data-list-text="?">
                         <p style="padding-left: 73pt;text-indent: -18pt;text-align: left;">In a constructor, we can use
                             this(...) to call <i>another </i>constructor of this class.</p>
                     </li>
-                    <li data-list-text="">
+                    <li data-list-text="?">
                         <p style="padding-left: 73pt;text-indent: -18pt;text-align: left;">Inside a method, we can use
                             the statement &quot;return this&quot; to return this instance to the caller.</p>
                     </li>
@@ -1159,7 +1162,8 @@
                         style=" color: #0052A1;">Circle[radius=1.0,color=red]</span></p>
                 <p style="padding-left: 9pt;text-indent: 0pt;text-align: left;">System.out.println(&quot;c4 is: &quot;
                     <span style=" color: #E21B22;">+ c4</span>); <span style=" color: #090;">// &#39;+&#39; invokes
-                        toString() to get a String before concatenation</span></p>
+                        toString() to get a String before concatenation</span>
+                </p>
                 <p class="s10" style="padding-left: 9pt;text-indent: 0pt;text-align: left;">//<span
                         style=" color: #0052A1;">Circle[radius=1.0,color=red]</span></p>
                 <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;" />
@@ -1417,7 +1421,8 @@
     <p style="padding-left: 9pt;text-indent: 0pt;text-align: left;">public class <b>TestCircle </b>{</p>
     <p style="padding-left: 18pt;text-indent: 0pt;text-align: left;">public static void main(String[] args) {</p>
     <p class="s10" style="padding-left: 27pt;text-indent: 0pt;text-align: left;">// Test all constructors and toString()
-        <span style=" color: #000;">Circle c1 = new Circle(1.1, &quot;blue&quot;);</span></p>
+        <span style=" color: #000;">Circle c1 = new Circle(1.1, &quot;blue&quot;);</span>
+    </p>
     <p style="padding-left: 27pt;text-indent: 0pt;text-align: left;">System.out.println(c1); <span
             style=" color: #090;">// implicitly run toString()</span></p>
     <p class="s10" style="padding-left: 27pt;text-indent: 0pt;text-align: left;">//<span
@@ -1471,10 +1476,10 @@
     <p style="text-indent: 0pt;text-align: left;"><br /></p>
     <p class="s17" style="padding-left: 16pt;text-indent: 0pt;text-align: left;"><a
             href="https://docs.oracle.com/javase/tutorial/java/generics/index.html"
-            style=" color: black; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12pt;"
+            style=" color: black; font-family: &quot;Times New Roman&quot;, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12pt;"
             target="_blank">The rest of the examples in this section use generics. If you are not yet familiar with the
             syntax of generics, see the </a><span
-            style=" color: #09559D; font-family:&quot;Times New Roman&quot;, serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 12pt;">Generics
+            style=" color: #09559D; font-family:&quot; Times New Roman&quot, serif, font-style:normal,font-weight:normal, text-decoration: underline; font-size: 12pt;">Generics
             (Updated)</span> <span style=" color: #000;">lesson.</span></p>
     <p style="text-indent: 0pt;text-align: left;"><br /></p>
     <p style="padding-left: 16pt;text-indent: 0pt;text-align: left;">Consider the following code:</p>
@@ -2839,14 +2844,16 @@
             style=" color: #660;">[]) { </span><span style=" color: #000087;">int </span>a<span style=" color: #660;">,
         </span>b<span style=" color: #660;">;</span></p>
     <p class="s30" style="padding-left: 21pt;text-indent: 0pt;text-align: left;"><span style=" color: #000;">a </span>=
-        <span style=" color: #066;">10</span>;</p>
+        <span style=" color: #066;">10</span>;
+    </p>
     <p class="s30" style="padding-left: 21pt;text-indent: 0pt;text-align: left;"><span style=" color: #000;">b </span>=
         (<span style=" color: #000;">a </span>== <span style=" color: #066;">1</span>) ? <span
             style=" color: #066;">20</span>: <span style=" color: #066;">30</span>;</p>
     <p class="s30" style="padding-left: 21pt;text-indent: 0pt;text-align: left;"><span
             style=" color: #606;">System</span>.<span style=" color: #000087;">out</span>.<span
             style=" color: #000;">println</span>( <span style=" color: #008700;">&quot;Value of b is : &quot; </span>+
-        <span style=" color: #000;">b </span>);</p>
+        <span style=" color: #000;">b </span>);
+    </p>
     <p style="text-indent: 0pt;text-align: left;"><br /></p>
     <p class="s30" style="padding-left: 21pt;text-indent: 0pt;text-align: left;"><span style=" color: #000;">b </span>=
         (<span style=" color: #000;">a </span>== <span style=" color: #066;">10</span>) ? <span
@@ -2854,7 +2861,8 @@
     <p class="s30" style="padding-left: 21pt;text-indent: 0pt;text-align: left;"><span
             style=" color: #606;">System</span>.<span style=" color: #000087;">out</span>.<span
             style=" color: #000;">println</span>( <span style=" color: #008700;">&quot;Value of b is : &quot; </span>+
-        <span style=" color: #000;">b </span>);</p>
+        <span style=" color: #000;">b </span>);
+    </p>
     <p class="s30" style="padding-left: 12pt;text-indent: 0pt;text-align: left;">}</p>
     <p class="s30" style="padding-left: 3pt;text-indent: 0pt;text-align: left;">}</p>
     <p style="padding-left: 11pt;text-indent: 0pt;text-align: left;" />
@@ -3237,4 +3245,5 @@
         </tr>
     </table>
 </body>
+
 </html>
