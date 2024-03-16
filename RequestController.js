@@ -4,7 +4,7 @@ class mains{
         console.log("initiated")
         var notes = note;
         console.log(notes)
-        url="./hidden/fd/Week1.html"
+      //  url="./hidden/fd/Week1.html"
         location.assign("./hidden/fd/Week"+notes+".html")
     }
 }
