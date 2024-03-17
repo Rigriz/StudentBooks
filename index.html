@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./hidden/home.css">
     <script src="./hidden/jso/inde.js"> </script>
     <!--H-->
-</head>
+</head> 
 <style>
     body {
     background-color: rgb(255, 254, 254);
@@ -90,4 +90,76 @@
     }
     const app = new App();
   </script>
+  <script>
+  // Function to fetch IP information from ipinfo API
+function fetchIPInformation() {
+    const apiUrl = 'https://ipinfo.io/49.37.171.83/json'; // Replace with the desired IP address
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            // Extract the desired data fields
+            const ip = data.ip;
+            const hostname = data.hostname;
+            const anycast = data.anycast;
+            const city = data.city;
+            const region = data.region;
+            const country = data.country;
+            const loc = data.loc;
+            const org = data.org;
+            const postal = data.postal;
+            const timezone = data.timezone;
+            const asn = data.asn;
+            const domain = data.domain;
+            const route = data.route;
+
+            console.log('IP:', ip);
+            console.log('Hostname:', hostname);
+            console.log('Anycast:', anycast);
+            console.log('City:', city);
+            console.log('Region:', region);
+            console.log('Country:', country);
+            console.log('Location:', loc);
+            console.log('Organization:', org);
+            console.log('Postal Code:', postal);
+            console.log('Timezone:', timezone);
+            console.log('ASN:', asn);
+            console.log('Domain:', domain);
+            console.log('Route:', route);
+            
+            // Additional fields like company, privacy, abuse can also be extracted as needed
+        })
+        .catch(error => console.error('Error fetching IP information:', error));
+}
+
+// Call the function to fetch IP information
+fetchIPInformation();
+
+async function sendDataToFauna(jsonData) {
+  const url = 'https://fnAFcst5ZcAAyhlUKveoK3Pm0c8owcTCUhPhQ_BW'; // Replace with your actual endpoint URL
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(jsonData)
+  });
+
+  if (!response.ok) {
+    console.error('Error sending data:', response.statusText);
+    return;
+  }
+
+  const data = await response.json();
+  console.log('Data sent:', data);
+}
+
+const myData = {
+  name: 'John Doe',
+  email: 'john.doe@example.com'
+};
+
+sendDataToFauna(myData);
+  </script>
+  
 </html>
