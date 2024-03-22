@@ -8,4 +8,9 @@ class mains{
         location.assign("./hidden/fd/Week"+notes+".html")
     }
 }
+class os {
+
+
+}
 const main = new mains();
+const osa = new os();
