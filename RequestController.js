@@ -10,9 +10,8 @@ class mains{
 }
 class os {
     labmanual(){
-        console.log("initiated")
-        url="./hidden/osa/Labmanual.html"
-        location.assign("./hidden/osa/Labmanual.html")
+        console.log("initiated");
+        location.assign("./hidden/osa/Labmanual.html");
     }
 
 }
