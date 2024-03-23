@@ -19,7 +19,7 @@ class os {
     }
     labmanual13(){
         console.log("initated")
-        location.adding("./hidden/osa/Labmanual13.html");
+        location.assign("./hidden/osa/Labmanual13.html");
     }
     //Request controller from osa weeks navigateor to the weeks using which
     week(which){
