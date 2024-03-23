@@ -6,21 +6,25 @@
     <link class="i" rel="icon" type="image/x-icon" href="./hidden/css/webo.ico">
 </head>
 <style>
-    #body {
-      margin: 1% auto; /* Set margins automatically for responsiveness */
+    body {
+      margin: 12%; /* Remove default margins for better control */
+      display: flex; /* Use flexbox for centering */
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+      min-height: 100vh; /* Set minimum height for full viewport coverage */
     }
 
     img {
-      width: 100%; /* Images take up full width */
-      height: auto; /* Maintain aspect ratio */
-      margin-bottom: 10px; /* Add spacing between images */
+      width: 100%; /* Images take up full width within their container */
+      max-width: 700px; /* Limit maximum image width for larger screens */
+      object-fit: cover; /* Maintain aspect ratio and zoom to fit container */
     }
 
-    /* Media queries for different screen sizes */
-    @media (min-width: 768px) {
-      /* For screens wider than 768px (tablets and desktops) */
+    /* Media queries for different screen sizes (optional) */
+    @media (max-width: 768px) {
+      /* For screens up to 768px (mobile) */
       img {
-        max-width: 500px; /* Limit image width for larger screens */
+        max-width: 100vw; /* Allow image to fill full viewport width on mobile */
       }
     }
   </style>
