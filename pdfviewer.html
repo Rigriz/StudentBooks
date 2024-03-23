@@ -1,218 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyFlow&#160;|&#160;Notes</title>
-    <link class="i" rel="icon" type="image/x-icon" href="./hidden/css/webo.ico">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfkit/0.15.0/pdfkit.min.js"></script>
-    <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous"
-  />
-    <style>
-        * {
-          margin: 0;
-          padding: 0;
-        }
-        
-        .top-bar {
-          background: #333;
-          color: #fff;
-          padding: 1rem;
-        }
-        
-        .btn {
-          background: coral;
-          color: #fff;
-          border: none;
-          outline: none;
-          cursor: pointer;
-          padding: 0.7rem 2rem;
-        }
-        
-        .btn:hover {
-          opacity: 0.9;
-        }
-        
-        .page-info {
-          margin-left: 1rem;
-        }
-        
-        .error {
-          background: orangered;
-          color: #fff;
-          padding: 1rem;
-        }
-        
-        </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyFlow&#160;|&#160;Notes</title>
+  <link class="i" rel="icon" type="image/x-icon" href="./hidden/css/webo.ico">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.0.279/pdf.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="./pd.js"> </script>
+
+  <style>
+    * {
+    margin:0;
+    padding: 0;
+    }
+    .top-bar {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    }
+    .btn {
+    background: coral;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.7rem 2rem;
+    }
+    .btn:hover {
+    opacity: 0.9;
+    }
+    .page-info {
+    margin-left: 1rem;
+    }
+    .error {
+    background: orangered;
+    color: #fff;
+    padding: 1rem;
+    }
+    </style>
 </head>
-<script>
-    var aph = localStorage.getItem('data');
-    console.log(aph)
-    var aphint = parseInt(aph);
-    console.log("entering obja")
-
-        if (aphint = 1) {
-            var url = "https://drive.google.com/file/d/1PsMvXECSNRTsZJKtrloaoTxIu1PwiTEg/view?usp=sharing"
-            console.log("week1 set");
-        }
-        if (aphint = 2) {
-            var url = "https://www.google.com"
-            console.log("week1 set");
-        }
-        if (aphint = 3) {
-            var url = "https://www.google.com"
-            console.log("week1 set");
-        }
-        if (aphint = 4) {
-            var url = "https://www.google.com"
-            console.log("week1 set");
-        }
-        if (aphint = 5) {
-            var url = "https://www.google.com"
-            console.log("week1 set");
-        }
-        if (aphint = 6) {
-            var url = "https://www.google.com"
-            console.log("week1 set");
-        }
-        if (aphint = 7) {
-            var url = "https://www.google.com"
-            console.log("week1 set");
-        }
-        if (aphint = 8) {
-            var url = "https://www.google.com"
-            console.log("week1 set");
-        }
-        if (aphint = 9) {
-            var url = "https://www.google.com"
-            console.log("week1 set");
-        }
-        if (aphint = 10) {
-            var url = "https://www.google.com"
-            console.log("week1 set");
-        }
-        if (aphint = 12) {
-            var url = "https://www.google.com"
-            console.log("week1 set");
-        }
-        if (aphint = 13) {
-            var url = "https://www.google.com"
-            console.log("week1 set");
-        }  
-        console.log(url);
-</script>
-
-  <body>
-    <div class="top-bar">
-      <button class="btn" id="prev-page">
-        <i class="fas fa-arrow-circle-left"></i> Prev Page
-      </button>
-      <button class="btn" id="next-page">
-        Next Page <i class="fas fa-arrow-circle-right"></i>
-      </button>
-      <span class="page-info">
-        Page <span id="page-num"></span> of <span id="page-count"></span>
-      </span>
-    </div>
-    <canvas id="pdf-render"></canvas>
-     <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
-     <script>
-
-let pdfDoc = null,
-  pageNum = 1,
-  pageIsRendering = false,
-  pageNumIsPending = null;
-
-const scale = 1.5,
-  canvas = document.querySelector('#pdf-render'),
-  ctx = canvas.getContext('2d');
-
-// Render the page
-const renderPage = num => {
-  pageIsRendering = true;
-
-  // Get page
-  pdfDoc.getPage(num).then(page => {
-    // Set scale
-    const viewport = page.getViewport({ scale });
-    canvas.height = viewport.height;
-    canvas.width = viewport.width;
-
-    const renderCtx = {
-      canvasContext: ctx,
-      viewport
-    };
-
-    page.render(renderCtx).promise.then(() => {
-      pageIsRendering = false;
-
-      if (pageNumIsPending !== null) {
-        renderPage(pageNumIsPending);
-        pageNumIsPending = null;
-      }
-    });
-
-    // Output current page
-    document.querySelector('#page-num').textContent = num;
-  });
-};
-
-// Check for pages rendering
-const queueRenderPage = num => {
-  if (pageIsRendering) {
-    pageNumIsPending = num;
-  } else {
-    renderPage(num);
-  }
-};
-
-// Show Prev Page
-const showPrevPage = () => {
-  if (pageNum <= 1) {
-    return;
-  }
-  pageNum--;
-  queueRenderPage(pageNum);
-};
-
-// Show Next Page
-const showNextPage = () => {
-  if (pageNum >= pdfDoc.numPages) {
-    return;
-  }
-  pageNum++;
-  queueRenderPage(pageNum);
-};
-
-// Get Document
-pdfjsLib
-  .getDocument(url)
-  .promise.then(pdfDoc_ => {
-    pdfDoc = pdfDoc_;
-
-    document.querySelector('#page-count').textContent = pdfDoc.numPages;
-
-    renderPage(pageNum);
-  })
-  .catch(err => {
-    // Display error
-    const div = document.createElement('div');
-    div.className = 'error';
-    div.appendChild(document.createTextNode(err.message));
-    document.querySelector('body').insertBefore(div, canvas);
-    // Remove top bar
-    document.querySelector('.top-bar').style.display = 'none';
-  });
-
-// Button Events
-document.querySelector('#prev-page').addEventListener('click', showPrevPage);
-document.querySelector('#next-page').addEventListener('click', showNextPage);
-</script>
+<body>
+  <div class="top-bar">
+    <button class="btn" id="prev-page">
+      <i class="fas fa-arrow-circle-left"></i> Prev Page
+    </button>
+    <button class="btn" id="next-page">
+      Next Page <i class="fas fa-arrow-circle-right"></i>
+    </button>
+    <span class="page-info">
+      Page <span id="page-num"></span> of <span id="page-count"></span>
+    </span>
+</div>
+  <canvas id="pdf-render"></canvas>
 </body>
 </html>
-
-
