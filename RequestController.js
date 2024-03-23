@@ -13,6 +13,13 @@ class os {
         console.log("initiated");
         location.assign("./hidden/osa/Labmanual.html");
     }
+    //Request controller from osa weeks navigateor to the weeks using which
+    week(which){
+       localStorage.setItem('data',which);
+       console.log("initiated")
+       var whichone = which;
+        location.assign("./hidden/osa/Week"+whichone+"_OSA.html")
+    }
 
 }
 const main = new mains();
