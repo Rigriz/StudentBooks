@@ -6,15 +6,24 @@
     <link class="i" rel="icon" type="image/x-icon" href="./hidden/css/webo.ico">
 </head>
 <style>
-    #body{
-     margin-top: 1%;
-     margin-left:20%;
-     margin-right:20%;
+    #body {
+      margin: 1% auto; /* Set margins automatically for responsiveness */
     }
-    img{
-        width:"500px";
-        height:"600px";
+
+    img {
+      width: 100%; /* Images take up full width */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Add spacing between images */
     }
+
+    /* Media queries for different screen sizes */
+    @media (min-width: 768px) {
+      /* For screens wider than 768px (tablets and desktops) */
+      img {
+        max-width: 500px; /* Limit image width for larger screens */
+      }
+    }
+  </style>
 </style>
 <body id="body">
     <div>
