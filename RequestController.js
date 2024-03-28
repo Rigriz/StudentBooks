@@ -9,7 +9,7 @@ class mains{
     }
     labmanual(){
         console.log("initiated")
-        location.assign("./hidden/fd/Labmanual.htm")
+        location.assign("./hidden/fd/Labmanual.html")
     }
 }
 class os {
@@ -34,5 +34,16 @@ class os {
     }
 
 }
+class dsa{
+    data(note){
+        localStorage.setItem('data', note);
+        console.log("initiated")
+        var notes = note;
+        console.log(notes)
+      //  url="./hidden/fd/Week1.html"
+        location.assign("./hidden/dsa/Week"+notes+".html")
+    }
+}
 const main = new mains();
 const osa = new os();
+const ds = new dsa();
