@@ -7,6 +7,10 @@ class mains{
       //  url="./hidden/fd/Week1.html"
         location.assign("./hidden/fd/Week"+notes+".html")
     }
+    labmanual(){
+        console.log("initiated")
+        location.assign("./hidden/fd/Labmanual.htm")
+    }
 }
 class os {
     labmanual(){
