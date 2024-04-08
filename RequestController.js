@@ -32,7 +32,6 @@ class os {
        var whichone = which;
         location.assign("./hidden/osa/Week"+whichone+"_OSA.html")
     }
-
 }
 class dsa{
     data(note){
