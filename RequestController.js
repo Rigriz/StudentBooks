@@ -7,6 +7,10 @@ class mains{
       //  url="./hidden/fd/Week1.html"
         location.assign("./hidden/fd/Week"+notes+".html")
     }
+    labmanual(){
+        console.log("initiated")
+        location.assign("./hidden/fd/Labmanual.html")
+    }
 }
 class os {
     labmanual(){
@@ -32,5 +36,16 @@ class os {
         location.assign("./hidden/osa/OS_NOTES.html");
     }
 }
+class dsa{
+    data(note){
+        localStorage.setItem('data', note);
+        console.log("initiated")
+        var notes = note;
+        console.log(notes)
+      //  url="./hidden/fd/Week1.html"
+        location.assign("./hidden/dsa/Week"+notes+".html")
+    }
+}
 const main = new mains();
 const osa = new os();
+const ds = new dsa();
