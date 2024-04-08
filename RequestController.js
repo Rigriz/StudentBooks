@@ -28,7 +28,9 @@ class os {
        var whichone = which;
         location.assign("./hidden/osa/Week"+whichone+"_OSA.html")
     }
-
+    allweekexp(){
+        location.assign("./hidden/osa/OS_NOTES.html");
+    }
 }
 const main = new mains();
 const osa = new os();
