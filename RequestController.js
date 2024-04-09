@@ -36,7 +36,7 @@ class os {
         location.assign("./hidden/osa/OS_NOTES.html");
     }
 }
-class dsa{
+class dsap{
     data(note){
         localStorage.setItem('data', note);
         console.log("initiated")
@@ -45,7 +45,10 @@ class dsa{
       //  url="./hidden/fd/Week1.html"
         location.assign("./hidden/dsa/Week"+notes+".html")
     }
+    labprograms(){
+         location.assign("./hidden/dsa/LAB_PROGRAMS.html")
+    }
 }
 const main = new mains();
 const osa = new os();
-const ds = new dsa();
+const dsa = new dsap();
