@@ -70,13 +70,13 @@ class dsap{
         location.assign("./hidden/dsa/Bineary_Search_Tree.html");
     }
     DSP_Overview(){
-        locatioin.assign("./hidden/dsa/DSA_OverView.html");
+        location.assign("./hidden/dsa/DSP_Overview.html");
     }
     Recursion_concept(){
-        locatioin.assign("./hidden/dsa/Recursion_Concept.html");
+        location.assign("./hidden/dsa/Recursion_Concept.html");
     }
     Stack_Concept(){
-        locatioin.assign("./hidden/dsa/Stack_Concept.html");
+        location.assign("./hidden/dsa/Stack_Concept.html");
     }
 }
 const main = new mains();
