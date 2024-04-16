@@ -134,32 +134,14 @@ function fetchIPInformation() {
 
 // Call the function to fetch IP information
 fetchIPInformation();
-
-async function sendDataToFauna(jsonData) {
-  const url = 'https://fnAFcst5ZcAAyhlUKveoK3Pm0c8owcTCUhPhQ_BW'; // Replace with your actual endpoint URL
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(jsonData)
-  });
-
-  if (!response.ok) {
-    console.error('Error sending data:', response.statusText);
-    return;
-  }
-
-  const data = await response.json();
-  console.log('Data sent:', data);
-}
-
-const myData = {
-  name: 'John Doe',
-  email: 'john.doe@example.com'
-};
-
-sendDataToFauna(myData);
   </script>
-  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YW4QGC7G88"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YW4QGC7G88');
+</script>
 </html>
