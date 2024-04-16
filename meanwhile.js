@@ -1,6 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
+function meanwhile (){ 
+    
+    document.addEventListener("DOMContentLoaded", function() {
     // URL of the wiki page you want to scrape
-    var wikiURL = "https://en.wikipedia.org/wiki/Main_Page";
+    var wikiURL = "https://www.wikihow.com/Main-Page";
 
     // Make a request to fetch the HTML content of the wiki page
     fetch(wikiURL)
@@ -20,3 +22,4 @@ document.addEventListener("DOMContentLoaded", function() {
             console.error('Error fetching wiki content:', error);
         });
 });
+ }
