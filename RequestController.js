@@ -78,6 +78,9 @@ class dsap{
     Stack_Concept(){
         location.assign("./hidden/dsa/Stack_Concept.html");
     }
+    Febonaci(){
+        location.assign("./hidden/dsa/Febonaci.html");
+        }
 }
 const main = new mains();
 const osa = new os();
