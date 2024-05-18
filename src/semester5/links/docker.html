@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker</title>
+
+    <link rel="stylesheet" href="./hide/style.css">
+    <script type="text/javascript" src="s.js">
+       //$("web").load("https://www.w3schools.com/html/");
+    </script>
+</head>
+<body>
+    <button id="link1" onclick="docker()"> JavaTpoint</button>
+    <button id="link2" onclick="dock()"> Code with harry</button>
+    <button id="link3" onclick="do1()"> tutorialspoint</button>
+   <div id="web" >
+     <iframe id="frame" src="link" sandbox ="allow-forms allow-scripts allow-same-origin"></iframe>
+   </div>
+</body>
+<script>
+    previousURL= document.referrer;
+       //alert(previousURL);
+       if(previousURL === "http://127.0.0.1:5500/home.html")
+       { }else { window.location.href = "index.html"; }
+</script>
+</html>

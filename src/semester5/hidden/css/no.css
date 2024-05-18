@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(35, 34, 34);
+    margin: 14px;
+    margin-top: 12px;
+    width:320p; height:320px;
+}
+lable{
+    font-size: max 30em;
+    font-size:min 12em;
+}
+fieldset{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(35, 132, 242);
+    border: 1.5px solid white;
+    border-radius: 25px;
+    padding: 1.5% 1.5% 2% 2%;
+    margin: 3px;  
+}
+@media screen and (max-width: 601px)
+ {
+    lable.example {
+        font-size: 14px;
+    }
+    input.example {
+        font-size: 10px;
+    }
+    input.exaple [type="button"]
+    {
+        background-size: 5%;
+    }
+}
+@media screen and (max-width: 300px)
+ {
+    lable.example {
+        font-size: 5px;
+    }
+    input.example {
+        font: size 10px;
+    }
+    input.example [type="button"]
+    {
+        background-size: 1.5%;
+    }
+}
+lable {
+    font-size: max 30em;
+    font-size:min 12em;
+}
+input:hover {
+    background-color: rgb(55, 134, 237);
+    transform: scale(1.1);
+    border: 0.5% rgb(37, 121, 231);
+}
+input[type="button"] {
+    background-image: url("n.png");
+    border: 1.5px solid white;
+    border-radius: 15px;
+    background-color:white;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: 21%;
+    background-position-x: 97%;
+    width: 90%;
+    height: 28%;
+    text-align: left;
+    background-size: 5%;
+    margin: 0.5% 0.5% 0.5% 2.5%;
+    font-size: 25px;
+    padding-inline-start: 1.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}

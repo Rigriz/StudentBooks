@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qa</title>
+    <link rel="icon" type="image/x-icon" href="./hidden/css/zz.ico">
+    <script src="./hidden/jso/note.js"> </script>
+    <link rel="stylesheet" href="./hidden/note.css">
+</head>
+<style>
+body {
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Vibur';
+    text-align: center;
+}
+</style>
+<body>
+    <section>
+        <!-- <lable style="color: rgb(101, 101, 219); font-family: Arial,Helvetica;">Notes</lable> -->
+        <fieldset><legend> Question paper/answer keys</legend>
+        <div id="pd">
+            <input type="button" value="Model Q/A" onclick="model()"><br />
+            <input type="button" value="Exam1" onclick="exam1()"><br />
+            <input type="button" value="Exam2" onclick="exam2()"><br />
+            <input type="button" value="Makeup Exam" onclick="exam3()"><br />
+        </div>
+    </fieldset>
+</section>
+</body>
+<script>
+   previousURL= document.referrer;
+   if(previousURL =="http://127.0.0.1:5500/home.html"){}
+   else{window.location.href = "http://127.0.0.1:5500/home.html"}
+</script>
+</html>
